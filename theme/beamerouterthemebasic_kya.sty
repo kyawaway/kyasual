@@ -1,22 +1,73 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Title 
+% Title
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Title
+
+\defbeamertemplate*{title page}{crystalline}[1][]{%
+  \nointerlineskip%
+  \begin{beamercolorbox}[wd=\the\paperwidth, ht=\the\paperheight, sep = 0pt, dp = 0pt, #1]{%
+      title,
+      subtitle,
+      date,
+      institute,
+      author,
+      titlegraphic
+    }
+    \begin{tikzpicture}
+      \useasboundingbox (0,0) rectangle(\the\paperwidth, \the\paperheight);
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Section 
+      \node[anchor=west] at (1cm, 5cm) {%
+            {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+      };
+
+%      \node[above right] at (1.15cm, 0.5em + 0.45\paperheight){%
+%            {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}{%
+%            \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+%      };
+
+
+%      \node[above right] at (1.15cm, 3em){%
+%              {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
+%              {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
+%              \vspace{0.3em}
+%                     {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+ %                };
+
+      
+    \end{tikzpicture}    
+  \end{beamercolorbox}
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% Frame title
+
+\defbeamertemplate*{frametitle}{crystalline}[1][]{%
+  \begin{beamercolorbox}[wd=\paperwidth, ht=1cm]{frametitle} 
+    \begin{tikzpicture}
+      \useasboundingbox (0, -1pt) rectangle(\the\paperwidth,\the\paperheight);
+
+      \fill [color = normal_text_color] (0, 0pt) rectangle(\the\paperwidth, 1cm);
+      
+      \node[right] at (0.3, 0.5cm){
+        \color{frametitle.fg}
+        \insertframetitle
+      };
+
+      
+    \end{tikzpicture}
+  \end{beamercolorbox}
+}
 \setbeamertemplate{section in toc}[sections numbered]
 \setbeamertemplate{subsection in toc}[subsections numbered]
 \setbeamertemplate{section in toc shaded}[default][50]
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Item 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\setbeamertemplate{itemize items}[circle]
+% Section
 
-\setbeamertemplate{bibliography item}[text]
+
 
