@@ -2,9 +2,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Title
-
 \defbeamertemplate*{title page}{crystalline}[1][]{%
   \nointerlineskip%
   \begin{beamercolorbox}[wd=\the\paperwidth, ht=\the\paperheight, sep = 0pt, dp = 0pt, #1]{%
@@ -42,8 +39,8 @@
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%% Frame title
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% headline
 
 \defbeamertemplate*{frametitle}{crystalline}[1][]{%
   \begin{beamercolorbox}[wd=\paperwidth, ht=1cm]{frametitle} 
@@ -58,16 +55,28 @@
       };
 
       
+   % This is the title frame, do nothing
+
+      \node[above left, font=\large] at (\the\paperwidth+0.1cm, 0.4cm){
+        \usebeamercolor[fg]{page number in head/foot}%
+        \usebeamerfont{page number in head/foot}%
+        \insertpagenumber%
+        \footnotesize/\inserttotalframenumber
+      };
+       
     \end{tikzpicture}
   \end{beamercolorbox}
 }
-\setbeamertemplate{section in toc}[sections numbered]
-\setbeamertemplate{subsection in toc}[subsections numbered]
-\setbeamertemplate{section in toc shaded}[default][50]
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Section
 
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+\setbeamertemplate{section in toc shaded}[default][50]
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Item
 
 
