@@ -1,0 +1,121 @@
+\documentclass[aspectratio=1610,dvipdfmx,ja=standard]{beamer}
+\usepackage{amsmath,amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{ascmac}
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{listings,jvlisting} 
+\usepackage{url}
+\usetheme{basic_kya}
+%
+%
+%%% Begin:
+\lstset{
+    basicstyle={\ttfamily\small},
+    keywordstyle={\color{blue}},
+    commentstyle={\color{green}},
+    stringstyle=\color{red},
+    tabsize=1,
+    breaklines=true, %折り返し
+    frame={tblr},
+    backgroundcolor=\color{red}
+}
+\title{%
+    Sample(サンプル)
+}
+\subtitle{
+    -sample-(TODO)
+}
+\institute[Sample Univ.]{%
+    Sample Univ. 
+}
+\author{%
+    1XXXXX\ Sample Author
+}
+\date{%
+    \today
+}
+
+\begin{document}
+%
+%
+\begin{frame}
+\maketitle 
+\end{frame}
+
+\begin{frame}[fragile]{abstract}
+    \fontsize{18pt}{24pt}\selectfont
+This is sample page.\\[6pt] 
+これはサンプルページです．
+\end{frame}
+
+\section{section1}
+\subsection{subsection1}
+
+\begin{frame}
+    \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}[fragile]{code sample}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{lstlisting}
+class Monad m where 
+    (>>=) :: m a -> (a -> m b) -> m b 
+    return :: a -> m a
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            バーニングモナド \\
+            \textbf{BURNING MONAD}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{itemize sample}
+    itemize
+    \begin{itemize}
+        \item \textbf{bold item}
+        \begin{itemize}
+            \item sub item
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{math sample}
+    \begin{block}{\textit{Def. 1} Sample}
+        任意の集合$A$と，$A$上で定義された二項関係$\to_{\alpha}$の和$R = \bigcup_{a \in I} \to_a $の対$(A, R)$をSampleと呼ぶ．
+    \end{block}
+\end{frame}
+
+\begin{frame}{block sample}
+    \begin{block}{block}
+        block
+    \end{block}
+    \begin{alertblock}{alert}
+        alert
+    \end{alertblock}
+    \begin{exampleblock}{example}
+        example
+    \end{exampleblock}
+\end{frame}
+
+\section{section2}
+
+\begin{frame}
+    \tableofcontents[currentsection]
+\end{frame}
+%
+\section{section3}
+
+\begin{frame}
+    \tableofcontents[currentsection]
+\end{frame}
+%
+%
+%
+%
+\end{document}
+
+%%% End
