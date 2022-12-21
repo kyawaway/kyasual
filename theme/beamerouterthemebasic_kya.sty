@@ -49,13 +49,13 @@
 % headline
 
 \defbeamertemplate*{frametitle}{crystalline}[1][]{%
-  \begin{beamercolorbox}[wd=\paperwidth, ht=1cm]{frametitle} 
+  \begin{beamercolorbox}[wd=\paperwidth, ht=1.2cm]{frametitle} 
     \begin{tikzpicture}
       \useasboundingbox (0, -1pt) rectangle(\the\paperwidth,\the\paperheight);
 
-      \fill [color = normal_text_color] (0, 0pt) rectangle(\the\paperwidth, 1cm);
+      \fill [color = normal_text_color] (0, 0pt) rectangle(\the\paperwidth, 1.2cm);
       
-      \node[right] at (0.3, 0.5cm){
+      \node[right] at (0.3, 0.55cm){
         \color{frametitle.fg}
         \insertframetitle
       };
