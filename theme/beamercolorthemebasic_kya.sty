@@ -6,18 +6,21 @@
 
 \definecolor{background_color}{RGB}{255, 250, 230}
 \definecolor{normal_text_color}{RGB}{60, 55, 45}
-\definecolor{alerted_text_color}{RGB}{115, 35, 70}
+%\definecolor{alerted_text_color}{RGB}{70, 45, 40}
 
+\definecolor{alerted_text_color}{RGB}{115, 35, 70}
 
 \definecolor{block_title_color}{RGB}{70, 45, 40}
 \definecolor{block_body_color}{RGB}{235, 220, 185}
 
+\definecolor{alerted_block_title_color}{RGB}{115, 35, 70}
 \definecolor{alerted_block_body_color}{RGB}{229, 195, 190}
-\definecolor{example_block_title_color}{RGB}{90, 115, 35}
 
+\definecolor{example_block_title_color}{RGB}{90, 115, 35}
 \definecolor{example_block_body_color}{RGB}{225, 240, 200}
 
 %\definecolor{normal_box_color}{RGB}{}
+\definecolor{progress_bar_color}{RGB}{115, 35, 70}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -66,7 +69,7 @@
 \setbeamercolor{block title}{bg=block_title_color, fg=background_color}
 \setbeamercolor{block body}{bg=block_body_color, fg=normal_text_color}
 
-\setbeamercolor{block title alerted}{bg=alerted_text_color, fg=background_color}
+\setbeamercolor{block title alerted}{bg=alerted_block_title_color, fg=background_color}
 \setbeamercolor{block body alerted}{bg=alerted_block_body_color, fg=normal_text_color}
 
 \setbeamercolor{block title example}{bg=example_block_title_color, fg=background_color}
@@ -87,7 +90,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%% Any
-\setbeamercolor{footline}{fg=alerted_text_color}
+\setbeamercolor{footline}{fg=progress_bar_color}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
