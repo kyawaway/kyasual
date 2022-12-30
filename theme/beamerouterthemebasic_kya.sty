@@ -27,16 +27,18 @@
 %      };
 
       \node[above right] at (1.15cm, 0.5em + 0.45\paperheight){%
-            {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}{%
-            \usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
+            {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+      };
+      \node[above right] at (1.15cm, 0.5em + 0.33\paperheight){%
+            {\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}%
       };
 
 
-      \node[above right] at (1.15cm, 3em){%
+      \node[above right] at (1.15cm, 3.5em){%
               {\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
               {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
-              \vspace{0.3em}
                      {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+              \vspace{0.3em}
                 };
 
       
