@@ -1,6 +1,6 @@
 #!/usr/bin/env perl
  
-$latex    = 'uplatex %O %S';
+$latex    = 'xelatex';
 $biber     = 'biber %O -u -U --output_safechars %B';
 $bibtex    = 'upbibtex %O %B';
 $dvipdf    = 'dvipdfmx %O -o %D %S';
