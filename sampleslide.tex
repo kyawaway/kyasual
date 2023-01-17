@@ -47,11 +47,16 @@ This is sample page.\\[4pt]
 class Monad m where 
     (>>=) :: m a -> (a -> m b) -> m b 
     return :: a -> m a
+
+instance Monad (King k) where
+    f >>= m = State $ \s ->
+        let (k', a) = runState f k
+            in runState (m a) k'
             \end{lstlisting}
         \end{column}
         \begin{column}{0.5\textwidth}
-            バーニングモナド \\
-            \textbf{BURNING MONAD}
+            モナドの王，モナ王 \\
+            \textbf{MONAD KING}
         \end{column}
     \end{columns}
 \end{frame}
@@ -60,16 +65,22 @@ class Monad m where
     itemize
     \begin{itemize}
         \item \textbf{bold item}
-        \begin{itemize}
-            \item sub item
-        \end{itemize}
+        \item \textbf{bold item}
     \end{itemize}
+    \begin{block}{enumerate}
+    \begin{itemize}
+        \item \textbf{bold item}
+        \item \textbf{bold item}
+    \end{itemize}
+    \end{block}
+
 \end{frame}
 
 \begin{frame}{math sample}
-    \begin{block}{\textit{Def. 1} Sample}
+    \begin{block}{Def. 1 Sample}
         任意の集合$A$と，$A$上で定義された二項関係$\to_{\alpha}$の和$R = \bigcup_{a \in I} \to_a $の対$(A, R)$をSampleと呼ぶ．
     \end{block}
+
 \end{frame}
 
 \begin{frame}{block sample}
