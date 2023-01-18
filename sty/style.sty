@@ -14,20 +14,6 @@
 \usepackage{url}
 
 
-%%% listing
-\usepackage{listings}
-\usepackage{sty/source}
-
-%%%%%% lstinline
-\makeatletter
-\xpretocmd\lstinline{\Colorbox{example_block_body_color}\bgroup\appto\lst@DeInit{\egroup}}{}{}
-\makeatother
-
-
-%%% fonts
-\usepackage{sty/genshin}
-
-
 %%% theme
 %%%%%% configurations of PATH
 \makeatletter
@@ -41,4 +27,19 @@
   \def\beamer@themelocation{}
 
 \usefolder{theme}
-\usetheme{basic_kya}
+\usetheme{kyasual}
+
+
+%%% fonts
+\usepackage{sty/genshin}
+
+
+%%% listing
+\usepackage{listings}
+\usepackage{sty/source}
+
+%%%%%% lstinline
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{example_block_body_color}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother
+
