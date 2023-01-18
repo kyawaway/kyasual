@@ -1,6 +1,5 @@
 \documentclass[aspectratio=1610,14pt]{beamer}
 \usepackage{sty/style}
-
 %
 %
 %%% Begin:
@@ -28,6 +27,7 @@
 \begin{frame}
 \maketitle 
 \end{frame}
+
 \begin{frame}[fragile]{abstract}
 This is sample page.\\[4pt] 
 これはサンプルページです．
@@ -56,7 +56,8 @@ instance Monad (King k) where
         \end{column}
         \begin{column}{0.5\textwidth}
             モナドの王，モナ王 \\
-            \textbf{MONAD KING}
+            \textbf{MONAD KING}\\
+            \lstinline|\lstinline|
         \end{column}
     \end{columns}
 \end{frame}
@@ -65,13 +66,21 @@ instance Monad (King k) where
     itemize
     \begin{itemize}
         \item \textbf{bold item}
-        \item \textbf{bold item}
+        \item \textbf{item}
+        \begin{itemize}
+            \item \textbf{bold item}
+            \item \textbf{item}
+        \end{itemize}
     \end{itemize}
     \begin{block}{enumerate}
-    \begin{itemize}
+    \begin{enumerate}
         \item \textbf{bold item}
-        \item \textbf{bold item}
-    \end{itemize}
+        \item item
+        \begin{enumerate}
+            \item \textbf{bold item}
+            \item item
+        \end{enumerate}
+    \end{enumerate}
     \end{block}
 
 \end{frame}

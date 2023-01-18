@@ -2,6 +2,8 @@
 %%%%%% tikz
 \usepackage{xcolor}
 \usepackage{tikz}
+\usepackage{xpatch}
+\usepackage{realboxes}
 
 %%%%%% more
 \usepackage{amsmath,amssymb}
@@ -11,9 +13,15 @@
 \usepackage{calc}
 \usepackage{url}
 
+
 %%% listing
 \usepackage{listings}
 \usepackage{sty/source}
+
+%%%%%% lstinline
+\makeatletter
+\xpretocmd\lstinline{\Colorbox{example_block_body_color}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\makeatother
 
 
 %%% fonts
