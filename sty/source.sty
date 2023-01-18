@@ -1,15 +1,18 @@
 \lstset{
+    language=Haskell, %language
     backgroundcolor=\color{example_block_body_color},
     basicstyle={\ttfamily\lst@ifdisplaystyle\scriptsize\else\small\fi\color{normal_text_color}},
     commentstyle={\scriptsize\textcolor{example_block_title_color}},
     stringstyle=\color{normal_text_color},
+    numbers=left,
     firstnumber=1,      
-    stepnumber=5,      % 5行ずつ行番号をふる
-    numberstyle= {\sffamily\scriptsize\textcolor{example_block_title_color}},
+    stepnumber=1,
+%    numberstyle= {\sffamily\scriptsize\textcolor{example_block_title_color}},
+    numberstyle={\ttfamily\lst@ifdisplaystyle\scriptsize\else\small\fi\color{example_block_title_color}},
     tabsize=1,
     breaklines=true, %折り返し
     lineskip=-0.5pt,
-    frame={tblr},
+    frame={tb},
     linewidth=\textwidth,
     xleftmargin= 0.1cm,
     xrightmargin= 0.1cm,
