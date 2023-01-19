@@ -5,11 +5,10 @@
 %%% Begin:
 
 \title{%
-    Sample Title \\
-    サンプルタイトル
+    kyasual : The modern\\ beamer theme
 }
 \subtitle{
-    -sample subtitle-
+    -可愛げのあるbeamer theme-
 }
 \author{%
     1XXXXX\ Sample Author
@@ -28,16 +27,107 @@
 \maketitle 
 \end{frame}
 
-\begin{frame}[fragile]{abstract}
-This is sample page.\\[4pt] 
-これはサンプルページです．
+\begin{frame}[fragile]{Abstract}
+        なんか良い感じのbeamer theme †\alert{kyasual}†ができた!
 \end{frame}
 
-\section{section1}
-\subsection{subsection1}
+\section{Introduction}
 
 \begin{frame}
     \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Introduction}
+    \begin{textblock}{目的}
+        \begin{itemize}
+            \item{従来のbeamer templateは可愛げがないため，\\なんか\alert{可愛げのある}themeを書く．}
+        \end{itemize}
+    \end{textblock}
+    \begin{textblock}{要請}
+        \begin{enumerate}
+            \item{\alert{可愛げがある．}}
+                \begin{itemize}
+                    \item{お菓子みたいな配色}
+                \end{itemize}
+            \item{\textbf{日本語対応}している．}
+            \item{\textbf{エンジニア向けLT}に使える．}
+            \item{でも\textbf{数学のゼミ}でも使えるくらいには\alert{フォーマル}．}
+                \begin{itemize}
+                    \item{ギリcasualじゃないエセcasual，即ちkyasual．}
+                \end{itemize}
+        \end{enumerate}
+    \end{textblock}
+\end{frame}
+
+\begin{frame}{How to Setup}
+    \begin{textblock}{Preparation}
+        \begin{itemize}
+            \item{\textbf{Fork} the repository}
+            \item{install \textbf{LaTeX} and \textbf{latexmk}}
+        \end{itemize}
+    \end{textblock}
+
+    \begin{textblock}{Build}
+        \begin{enumerate}
+            \item{\lstinline|mv sampleslide.tex (your slide title)|}
+            \item{\lstinline|make|}
+        \end{enumerate}
+    \end{textblock}
+\end{frame}
+
+\section{Samples}
+\begin{frame}
+    \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Oberview}
+    \begin{textblock}{This is Sample section.}
+        \begin{enumerate}
+            \item{text}
+            \item{itemize}
+            \item{block}
+            \item{code}
+            \item{math}
+            \item{image} 
+            \item{tree}
+            \item{citation}
+        \end{enumerate}
+    \end{textblock}
+\end{frame}
+
+\begin{frame}{text sample}
+    This is Sample Page.\\
+    You can make \\
+    \alert{new line}\\
+    whenever you want to do.\\
+    If you want to enphasys word, you can use \textbf{bold} or \alert{alert}. \\
+    font : GenShinGothic
+\end{frame}
+
+\begin{frame}{日本語サンプル}
+    これは日本語のサンプルページです．\\
+    好きなタイミングで\\
+    \alert{改行}\\
+    できます．\\
+    一行あたりはだいたいこのくらい書けて，余ったら勝手に改行します．\\
+    強調は，\textbf{太字}と\alert{アラート}があります．\\
+    フォント：源真ゴシック
+\end{frame}
+
+\begin{frame}{itemize sample}
+    todo
+\end{frame}
+
+\begin{frame}{block sample}
+    \begin{block}{block}
+        block
+    \end{block}
+    \begin{exampleblock}{example}
+        example
+    \end{exampleblock}
+    \begin{alertblock}{alert}
+        alert
+    \end{alertblock}
 \end{frame}
 
 \begin{frame}[fragile]{code sample}
@@ -56,34 +146,12 @@ instance Monad (King k) where
         \end{column}
         \begin{column}{0.5\textwidth}
             モナドの王，モナ王 \\
-            \textbf{MONAD KING}\\
-            \lstinline|\lstinline|
+            \textbf{KING MONAD}\\
+            \lstinline|inline|
         \end{column}
     \end{columns}
 \end{frame}
 
-\begin{frame}{itemize sample}
-    itemize
-    \begin{itemize}
-        \item \textbf{bold item}
-        \item \textbf{item}
-        \begin{itemize}
-            \item \textbf{bold item}
-            \item \textbf{item}
-        \end{itemize}
-    \end{itemize}
-    \begin{block}{enumerate}
-    \begin{enumerate}
-        \item \textbf{bold item}
-        \item item
-        \begin{enumerate}
-            \item \textbf{bold item}
-            \item item
-        \end{enumerate}
-    \end{enumerate}
-    \end{block}
-
-\end{frame}
 
 \begin{frame}{math sample}
     \begin{block}{Def. 1 Sample}
@@ -92,32 +160,49 @@ instance Monad (King k) where
 
 \end{frame}
 
-\begin{frame}{block sample}
-    \begin{block}{block}
-        block
-    \end{block}
-    \begin{alertblock}{alert}
-        alert
-    \end{alertblock}
-    \begin{exampleblock}{example}
-        example
-    \end{exampleblock}
+\begin{frame}{image sample}
+    todo
 \end{frame}
 
-\begin{frame}{日本語サンプル}
-    これは日本語のサンプルページです．
+\begin{frame}{tree sample}
+    todo
 \end{frame}
 
-\section{section2}
-
-\begin{frame}
-    \tableofcontents[currentsection]
+\begin{frame}{citation sample}
+    todo
 \end{frame}
+
 %
-\section{section3}
+\section{How to Use?}
 
 \begin{frame}
     \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{How to Use?}
+    \begin{textblock}{基本的には，普通のbeamerと同じです．}
+        \begin{itemize}
+            \item{または，これとsampleslide.texを眺めてください．}
+            \item{要望があれば，ドキュメントを追加します．}
+                \begin{itemize}
+                    \item{要望は，issueへお願いします．}
+                \end{itemize}
+        \end{itemize}
+    \end{textblock}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}
+    \tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Conclusion}
+    \begin{textblock}{ふつうにめっちゃカジュアルになった．}
+        \begin{itemize}
+            \item{でも\alert{いい感じ}なので満足:)}
+        \end{itemize}
+    \end{textblock}
 \end{frame}
 %
 %
