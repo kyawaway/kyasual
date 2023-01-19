@@ -1,6 +1,6 @@
 all:
-	latexmk sampleslide.tex
+	latexmk *.tex
 
 clean:
-	latexmk -C sampleslide.tex
+	latexmk -C *.tex
 	rm -f sampleslide.bbl __latexindent_temp.tex *.aux *.fdb_latexmk *.fls *.log *.snm *.vrb *.nav
