@@ -53,7 +53,7 @@
             \item{\textbf{エンジニア向けLT}に使える．}
             \item{でも\textbf{数学のゼミ}でも使えるくらいには\alert{フォーマル}．}
                 \begin{itemize}
-                    \item{ギリcasualじゃないエセcasual，即ちkyasual．}
+                    \item[\textbf{?-}]{ギリcasualじゃないエセcasual，即ちkyasual．}
                 \end{itemize}
         \end{enumerate}
     \end{textblock}
@@ -116,7 +116,7 @@
 
 \begin{frame}{itemize sample}
     \begin{itemize}
-        \item{普通のitemize}
+        \item{普通のitem}
             \okitem{良い例のitem}
             \ngitem{ダメな例のitem}
             \begin{itemize}
@@ -149,7 +149,7 @@
 \begin{frame}[fragile]{code sample}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{lstlisting}
+            \begin{lstlisting}[language=Haskell]
 class Monad m where 
     (>>=) :: m a -> (a -> m b) -> m b 
     return :: a -> m a
@@ -218,9 +218,10 @@ instance Monad (King k) where
 \begin{frame}[fragile]{Features1: textbox}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{lstlisting}
+            \begin{lstlisting}[language=TeX]
 % using like other blocks
-\begin{textblock}{texxtblock title1}
+
+\begin{textblock}{textblock title1}
     textblock body1
 \end{textblock}
 
@@ -228,20 +229,20 @@ instance Monad (King k) where
     \begin{itemize}
         \item{textblock body2}
         \item{\alert{itemize}との併用で}
-        \item{いい感じ}
+        \okitem{いい感じ}
     \end{itemize}
 \end{textblock}
             \end{lstlisting}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \begin{textblock}{textblock title}
-                textblock body
+            \begin{textblock}{textblock title1}
+                textblock body1
             \end{textblock}
-            \begin{textblock}{textblock title}
+            \begin{textblock}{textblock title2}
                 \begin{itemize}
-                    \item{textblock body}
+                    \item{textblock body2}
                     \item{\alert{itemize}との併用で}
-                    \item{いい感じ}
+                    \okitem{いい感じ}
                 \end{itemize}
             \end{textblock}
         \end{column}
@@ -252,7 +253,10 @@ instance Monad (King k) where
 \begin{frame}[fragile]{Features2: itemize icon}
     \begin{columns}
         \begin{column}{0.5\textwidth}
-            \begin{lstlisting}
+            \begin{lstlisting}[language=TeX]
+% using feature command 
+% in itemize environment
+
 \begin{itemize}
     \okitem{ok}
     \negitem{neg}
@@ -303,7 +307,7 @@ instance Monad (King k) where
 \begin{frame}{Conclusion}
     \begin{textblock}{ふつうにめっちゃカジュアルになった．}
         \begin{itemize}
-            \item{でも\alert{いい感じ}なので満足:)}
+            \okitem{でも\alert{いい感じ}なので満足:)}
         \end{itemize}
     \end{textblock}
 \end{frame}
