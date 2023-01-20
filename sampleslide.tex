@@ -8,7 +8,7 @@
     kyasual : The modern\\ beamer theme
 }
 \subtitle{
-    -可愛げのあるbeamer theme-
+    -smart casual beamer theme-
 }
 \author{%
     1XXXXX\ Sample Author
@@ -54,6 +54,9 @@
             \item{でも\textbf{数学のゼミ}でも使えるくらいには\alert{フォーマル}．}
                 \begin{itemize}
                     \item[\textbf{?-}]{ギリcasualじゃないエセcasual，即ちkyasual．}
+                        \begin{itemize}
+                            \annoitem{\alert{smart casual} という言葉があった．}
+                        \end{itemize}
                 \end{itemize}
         \end{enumerate}
     \end{textblock}
@@ -80,7 +83,7 @@
     \tableofcontents[currentsection]
 \end{frame}
 
-\begin{frame}{Oberview}
+\begin{frame}{Overview}
     \begin{textblock}{This is Sample section.}
         \begin{enumerate}
             \item{text}
@@ -189,6 +192,32 @@ instance Monad (King k) where
 \end{frame}
 
 \begin{frame}{tree sample}
+    \scriptsize
+    \begin{prooftree}
+        \AxiomC{}
+        \RightLabel{(true)}
+        \UnaryInfC{$\vdash \mathrm{true} : \mathrm{bool}$}
+        \AxiomC{}
+        \RightLabel{(int)}
+        \UnaryInfC{$\vdash 0 : \mathrm{int}$}
+        \AxiomC{}
+        \RightLabel{(int)}
+        \UnaryInfC{$\vdash 1 : \mathrm{int}$}
+        \RightLabel{(tpl)}
+        \BinaryInfC{$\vdash \langle 0,1 \rangle  : \mathrm{int\times int}$}
+        \RightLabel{(fst)}
+        \UnaryInfC{$\vdash \mathrm{fst}\langle 0,1 \rangle :\mathrm{int}$}
+        \RightLabel{(tpl)}
+        \BinaryInfC{$\vdash \langle \mathrm{true  ,fst} \langle 0,1 \rangle \rangle : \mathrm{bool \times int}$}
+        \AxiomC{}
+        \RightLabel{(val)}
+        \UnaryInfC{$x:\mathrm{bool\times int} \vdash x : \mathrm{bool \times int}$}
+        \RightLabel{(snd)}
+        \UnaryInfC{$x:\mathrm{bool\times int} \vdash \mathrm{snd}\:x :\mathrm{int}$}
+        \RightLabel{(let)}
+        \BinaryInfC{$\vdash \mathrm{let}\: x = \langle \mathrm{true  ,fst} \langle 0,1 \rangle \rangle \: \mathrm{in \: snd}\:x:\mathrm{int}$}
+    \end{prooftree}
+    \normalsize
 \end{frame}
 
 \begin{frame}{image sample}
