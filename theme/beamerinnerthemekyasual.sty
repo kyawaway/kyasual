@@ -1,13 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Item
 
-\setbeamertemplate{itemize items}[circle]
+\setbeamertemplate{itemize items}{\filledcircle}
 
 \setbeamertemplate{bibliography item}[text]
 
 \newcommand{\okitem}{\item[\okmark]}
 \newcommand{\ngitem}{\item[\textcolor{alerted_text_color}{\ngmark}\hspace{0.1em}]}
-\newcommand{\thusitem}{\item[\thusmark]}
+\newcommand{\thusitem}{\item[\textcolor{example_block_title_color}\thusmark]}
 \newcommand{\butitem}{\item[\textcolor{alerted_text_color}{\otherwisemark}\hspace{-0.1em}]}
 \newcommand{\annoitem}{\item[※]}
 
@@ -26,7 +26,7 @@
 }
 
 \newcommand*{\filledcircle}{\tikz[baseline=(char.base)]{\node(char)[]{};
-    \fill [maincolor!80] (0em, 0.35em) circle (0.4em); 
+    \fill [normal_text_color] (-0.15em, 0.35em) circle (0.2em); 
   }
 }
 
