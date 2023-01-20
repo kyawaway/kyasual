@@ -90,7 +90,6 @@
             \item{math}
             \item{image} 
             \item{tree}
-            \item{citation}
         \end{enumerate}
     \end{textblock}
 \end{frame}
@@ -153,26 +152,29 @@ instance Monad (King k) where
 \end{frame}
 
 
-\begin{frame}{math sample}
+\begin{frame}{math sample1}
     \begin{block}{Def. 1 Sample}
         任意の集合$A$と，$A$上で定義された二項関係$\to_{\alpha}$の和$R = \bigcup_{a \in I} \to_a $の対$(A, R)$をSampleと呼ぶ．
     \end{block}
 
 \end{frame}
 
-\begin{frame}{image sample}
-    todo
-\end{frame}
+\begin{frame}{math sample 2}
+  \begin{equation}
+    x = a_0 + \cfrac{1}{a_1 
+      + \cfrac{1}{a_2 
+        + \cfrac{1}{a_3 + \cfrac{1}{a_4} } } }
+  \end{equation}
 
-\begin{frame}{tree sample}
-    todo
+  \[
+  \sqrt[n]{1+x+x^2+x^3+\dots+x^n}
+  \]
 \end{frame}
-
-\begin{frame}{citation sample}
-    todo
-\end{frame}
-
 %
+\begin{frame}{image sample}
+    \includegraphics[width = 3cm]{./fig/kya}
+\end{frame}
+
 \section{How to Use?}
 
 \begin{frame}
@@ -189,6 +191,85 @@ instance Monad (King k) where
                 \end{itemize}
         \end{itemize}
     \end{textblock}
+\end{frame}
+
+\begin{frame}[fragile]{Features1: textbox}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{lstlisting}
+% using like other blocks
+\begin{textblock}{texxtblock title1}
+    textblock body1
+\end{textblock}
+
+\begin{textblock}{textblock title2}
+    \begin{itemize}
+        \item{textblock body2}
+        \item{\alert{itemize}との併用で}
+        \item{いい感じ}
+    \end{itemize}
+\end{textblock}
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{textblock}{textblock title}
+                textblock body
+            \end{textblock}
+            \begin{textblock}{textblock title}
+                \begin{itemize}
+                    \item{textblock body}
+                    \item{\alert{itemize}との併用で}
+                    \item{いい感じ}
+                \end{itemize}
+            \end{textblock}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Features2: itemize icon}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{lstlisting}
+\begin{itemize}
+    \okitem{ok}
+    \negitem{neg}
+        \begin{itemize}
+            \thusitem{thus}
+            \butitem{but}
+        \end{itemize}
+        \annoitem{annotate}
+\end{itemize}
+
+\begin{enumerate}
+    \item{enum1}
+    \item{enum2}
+        \begin{enumerate}
+            \item{enum2.1}
+        \end{enumerate}
+\end{enumerate}            
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{itemize}
+                \okitem{ok}
+                \ngitem{neg}
+                    \begin{itemize}
+                        \thusitem{thus}
+                        \butitem{but}
+                    \end{itemize}
+                \annoitem{annotate}
+            \end{itemize}
+
+            \begin{enumerate}
+                \item{enum1}
+                \item{enum2}
+                    \begin{enumerate}
+                        \item{enum2.1}
+                    \end{enumerate}
+            \end{enumerate}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \section{Conclusion}
