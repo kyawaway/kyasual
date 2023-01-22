@@ -1,6 +1,8 @@
 # kyasual
 My Beamer Theme. 
 
+Documentation is in [/sampleslide.pdf](/sampleslide.pdf).
+
 ## Getting Started
 
 ### Prerequisites
