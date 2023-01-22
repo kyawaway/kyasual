@@ -18,14 +18,14 @@ If you want English version, please visit [EN](https://github.com/tkyawa/kyasual
 - latexmk
 
 ### Installation
-```
+```bash
 git clone git@github.com:tkyawa/kyasual.git
 make
 ```
 
 ### Usage
 The following code shows a minimal example of a Beamer presentation.
-```
+```latex
 \documentclass[aspectratio=1610,14pt]{beamer}
 \usepackage{sty/style}
 
