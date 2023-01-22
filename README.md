@@ -1,6 +1,10 @@
 # kyasual
 My Beamer Theme. 
 
+Documentation is in [/sampleslide.pdf](/sampleslide.pdf).
+
+If you want English version, please visit [EN](https://github.com/tkyawa/kyasual/tree/EN). 
+
 ## Getting Started
 
 ### Prerequisites
