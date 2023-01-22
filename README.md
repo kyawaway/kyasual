@@ -1,6 +1,11 @@
 # kyasual
 My Beamer Theme. 
 
+![sampleslide1](/fig/sampleslide/sampleslide-01.png)
+![sampleslide3](/fig/sampleslide/sampleslide-03.png)
+![sampleslide5](/fig/sampleslide/sampleslide-05.png)
+![sampleslide11](/fig/sampleslide/sampleslide-11.png)
+
 Documentation is in [/sampleslide.pdf](/sampleslide.pdf).
 
 If you want English version, please visit [EN](https://github.com/tkyawa/kyasual/tree/EN). 
