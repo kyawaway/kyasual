@@ -63,8 +63,8 @@
 \begin{frame}{How to Setup}
     \begin{textblock}{Preparation}
         \begin{itemize}
-            \item{\textbf{Fork} the repository}
-            \item{install \textbf{LaTeX} and \textbf{latexmk}}
+            \item{\textbf{Fork} this repository.}
+            \item{install \textbf{LaTeX} and \textbf{latexmk}.}
         \end{itemize}
     \end{textblock}
 
@@ -72,6 +72,7 @@
         \begin{enumerate}
             \item{\lstinline|mv sampleslide.tex (your slide title)|}
             \item{\lstinline|make|}
+                \thusitem{(your slide title).pdf should be generated.}
         \end{enumerate}
     \end{textblock}
 \end{frame}
@@ -86,7 +87,7 @@
         \begin{enumerate}
             \item{text}
             \item{itemize}
-            \item{block}
+            \item{block and box}
             \item{code}
             \item{math}
             \item{image} 
@@ -101,8 +102,12 @@
     \alert{new line}\\
     whenever you want to do.\\
     You can typing about this match. If a character overflows, a new line is inserted by itself.\\
-    If you want to enphasys word, you can use \textbf{bold} or \alert{alert}. \\
-    font : GenShinGothic
+    If you want to enphasys word, you can use \textbf{bold}, \alert{alert}, or \textit{italic}. \\
+    font :
+    \begin{itemize}
+        \item{Main: GenshinGothic}
+        \item{Italic: \textit{TimesItalic}}
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{日本語サンプル}
@@ -135,7 +140,7 @@
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{block sample}
+\begin{frame}{block and box sample}
     \begin{block}{block}
         block
     \end{block}
@@ -145,6 +150,9 @@
     \begin{alertblock}{alert}
         alert
     \end{alertblock}
+    \begin{simplebox}
+        simple box
+    \end{simplebox}
 \end{frame}
 
 \begin{frame}[fragile]{code sample}
@@ -207,7 +215,7 @@ instance Monad (King k) where
         \RightLabel{(tpl)}
         \BinaryInfC{$\vdash \langle \mathrm{true  ,fst} \langle 0,1 \rangle \rangle : \mathrm{bool \times int}$}
         \AxiomC{}
-        \RightLabel{(val)}
+        \RightLabel{(var)}
         \UnaryInfC{$x:\mathrm{bool\times int} \vdash x : \mathrm{bool \times int}$}
         \RightLabel{(snd)}
         \UnaryInfC{$x:\mathrm{bool\times int} \vdash \mathrm{snd}\:x :\mathrm{int}$}
@@ -320,6 +328,30 @@ instance Monad (King k) where
                         \item{enum2.1}
                     \end{enumerate}
             \end{enumerate}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Features3: simplebox}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{lstlisting}[language=TeX]
+\begin{simplebox}
+    simple box
+\end{simplebox}
+
+\begin{simplebox}
+    Not expected to be set up accordingly.
+\end{simplebox}
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{simplebox}
+                simple box
+            \end{simplebox}
+            \begin{simplebox}
+                Not expected to be set up accordingly.
+            \end{simplebox}
         \end{column}
     \end{columns}
 \end{frame}
