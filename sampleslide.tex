@@ -1,5 +1,6 @@
 \documentclass[aspectratio=1610,14pt]{beamer}
 \usepackage{sty/style}
+\usepackage{tcolorbox}
 %
 %
 %%% Begin:
@@ -28,7 +29,13 @@
 \end{frame}
 
 \begin{frame}[fragile]{Abstract}
-    なんか\emph{良い感じ}のbeamer theme †\alert{kyasual}†がでた!
+    なんか\emph{良い感じ}のbeamer theme †\alert{kyasual}†がでた!\\
+\begin{beamercolorbox}
+[sep=2pt, shadow=true, rounded=true]
+{box}\bfseries
+幅 50mm，パディング 2pt，影付，角丸，frmetitle 色
+の枠囲い．
+\end{beamercolorbox}
 \end{frame}
 
 \section{Introduction}
@@ -87,7 +94,7 @@
         \begin{enumerate}
             \item{text}
             \item{itemize}
-            \item{block}
+            \item{block and box}
             \item{code}
             \item{math}
             \item{image} 
@@ -140,7 +147,7 @@
     \end{enumerate}
 \end{frame}
 
-\begin{frame}{block sample}
+\begin{frame}{block and box sample}
     \begin{block}{block}
         block
     \end{block}
@@ -150,6 +157,9 @@
     \begin{alertblock}{alert}
         alert
     \end{alertblock}
+    \begin{simplebox}
+        simple box
+    \end{simplebox}
 \end{frame}
 
 \begin{frame}[fragile]{code sample}
@@ -326,6 +336,32 @@ instance Monad (King k) where
                         \item{enum2.1}
                     \end{enumerate}
             \end{enumerate}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Features3: simplebox}
+    \begin{columns}
+        \begin{column}{0.5\textwidth}
+            \begin{lstlisting}[language=TeX]
+\begin{simplebox}
+    simple box
+\end{simplebox}
+
+\begin{simplebox}
+    beamercolorboxで適宜設定してもらうことは\\
+    あんまり想定していない．
+\end{simplebox}
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \begin{simplebox}
+                simple box
+            \end{simplebox}
+            \begin{simplebox}
+                beamercolorboxで適宜設定してもらうことは\\
+                あんまり想定していない．
+            \end{simplebox}
         \end{column}
     \end{columns}
 \end{frame}
