@@ -1,4 +1,3 @@
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Title
 
@@ -156,15 +155,4 @@
 \setbeamertemplate{section in toc}[sections numbered]
 \setbeamertemplate{subsection in toc}[subsections numbered]
 \setbeamertemplate{section in toc shaded}[default][50]
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Block
-
-\newenvironment<>{textblock}[1]{%
-    \setbeamercolor{block title}{bg=background_color,fg=normal_text_color}%
-    \setbeamercolor{block body}{bg=background_color,fg=normal_text_color}%
-    \setbeamerfont{block title}{size = \normalsize, series = \bfseries}%
-    \setbeamerfont{block body}{size = \normalsize}%
-    \begin{block}#2{#1}}{\end{block}}
-
 
