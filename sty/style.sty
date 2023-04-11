@@ -40,6 +40,6 @@
 
 %%%%%% lstinline
 \makeatletter
-\xpretocmd\lstinline{\Colorbox{example_block_body_color}\bgroup\appto\lst@DeInit{\egroup}}{}{}
+\xpretocmd\lstinline{\Colorbox{example_block_body_color}\bgroup\kern-\fboxsep\vphantom{\ttfamily\char`\\y}\appto\lst@DeInit{\egroup}}{}{}
 \makeatother
 
