@@ -3,7 +3,7 @@
 
 \defbeamertemplate*{title page}{crystalline}[1][]{%
   \nointerlineskip%
-  \begin{beamercolorbox}[wd=\the\paperwidth, ht=\the\paperheight, sep = 0pt, dp = 0pt, #1]{%
+  \begin{beamercolorbox}[wd=\paperwidth, ht=\paperheight, sep = 0pt, dp = 0pt, #1]{%
       title,
       subtitle,
       date,
@@ -12,11 +12,11 @@
       titlegraphic
     }
     \begin{tikzpicture}
-      \useasboundingbox (0,0) rectangle(\the\paperwidth, \the\paperheight);
+      \useasboundingbox (0,0) rectangle(\paperwidth, \paperheight);
 
     \fill [
             color = normal_text_color,
-          ] (0, 0.3\paperheight) rectangle(\the\paperwidth, 1.1\paperheight);
+          ] (0, 0.3\paperheight) rectangle(\paperwidth, 1.1\paperheight);
 
 
 %      \node[anchor=west] at (1cm, 5cm) {%
@@ -31,7 +31,7 @@
 
       
       \node[above right] at (1.15cm, 0.5em + 0.45\paperheight){%
-      \begin{minipage}{\the\paperwidth-2cm}
+      \begin{minipage}{\paperwidth-2cm}
             {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
       \end{minipage}
       };
@@ -60,9 +60,9 @@
 \defbeamertemplate*{frametitle}{crystalline}[1][]{%
   \begin{beamercolorbox}[wd=\paperwidth, ht=1.2cm]{frametitle} 
     \begin{tikzpicture}
-      \useasboundingbox (0, -1pt) rectangle(\the\paperwidth,\the\paperheight);
+      \useasboundingbox (0, -1pt) rectangle(\paperwidth,\paperheight);
 
-      \fill [color = normal_text_color] (0, 0pt) rectangle(\the\paperwidth, 1.2cm);
+      \fill [color = normal_text_color] (0, 0pt) rectangle(\paperwidth, 1.2cm);
       
       \node[right] at (0.3, 0.55cm){
         \color{frametitle.fg}
@@ -72,7 +72,7 @@
       
    % This is the title frame, do nothing
 
-      \node[above left, font=\large] at (\the\paperwidth+0.1cm, 0.3cm){
+      \node[above left, font=\large] at (\paperwidth+0.1cm, 0.3cm){
         \usebeamercolor[fg]{page number in head/foot}%
         \usebeamerfont{page number in head/foot}%
         \insertpagenumber%
@@ -123,13 +123,13 @@
   \else
   \begin{beamercolorbox}[wd=\paperwidth, ht=1cm]{page number in head/foot} 
     \begin{tikzpicture}
-      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+      \useasboundingbox (0,0) rectangle(\paperwidth,\paperheight);
 
       % the progress bar
       \progressbar@progressbar%
       
       % the page number
-      \node[above left] at (\the\paperwidth - 1em, 0.1cm){%
+      \node[above left] at (\paperwidth - 1em, 0.1cm){%
         \usebeamercolor[fg]{page number in head/foot}%
         \usebeamerfont{page number in head/foot}%
         \insertpagenumber%
@@ -143,9 +143,9 @@
 
 \setbeamertemplate{background}{
   \begin{tikzpicture}
-    \useasboundingbox (0, 0) rectangle(\the\paperwidth,\the\paperheight);  
+    \useasboundingbox (0, 0) rectangle(\paperwidth,\paperheight);  
     \fill[color = background_color, opacity = 1]
-    (0, 0) rectangle(\the\paperwidth,\the\paperheight + 5cm);
+    (0, 0) rectangle(\paperwidth,\paperheight + 5cm);
   \end{tikzpicture}
 }
 
