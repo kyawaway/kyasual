@@ -19,17 +19,6 @@
           ] (0, 0.3\paperheight) rectangle(\paperwidth, 1.2\paperheight);
 
 
-%      \node[anchor=west] at (1cm, 5cm) {%
-%            {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
-%      };
-%      \node[anchor=west] at (1cm, -1cm) {%
-%            {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\insertinstitute\par}
-%      };
-%      \node[anchor=west] at (1cm, -1.5cm) {%
-%            {\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
-%      };
-
-      
       \node[above right] at (1.15cm, 0.5em + 0.45\paperheight){%
       \begin{minipage}{\paperwidth-2cm}
             {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
@@ -70,8 +59,6 @@
       };
 
       
-   % This is the title frame, do nothing
-
       \node[above left, font=\large] at (\paperwidth+0.1cm, 0.3cm){
         \usebeamercolor[fg]{page number in head/foot}%
         \usebeamerfont{page number in head/foot}%
@@ -127,14 +114,6 @@
 
       % the progress bar
       \progressbar@progressbar%
-      
-      % the page number
-      \node[above left] at (\paperwidth - 1em, 0.1cm){%
-        \usebeamercolor[fg]{page number in head/foot}%
-        \usebeamerfont{page number in head/foot}%
-        \insertpagenumber%
-        \scalebox{0.7}{/\inserttotalframenumber}%
-      };
       
     \end{tikzpicture}
   \end{beamercolorbox}
