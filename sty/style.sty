@@ -13,6 +13,10 @@
 \usepackage{calc}
 \usepackage{url}
 \usepackage{bussproofs}
+\usepackage{stmaryrd}
+\usepackage{txfonts}
+\usepackage{svg}
+\usepackage[url=false,doi=false]{biblatex}
 
 %%% theme
 %%%%%% configurations of PATH
@@ -40,8 +44,11 @@
 \usepackage{listings}
 \usepackage{sty/source}
 
-%%%%%% lstinline
+%%% lstinline
 \makeatletter
 \xpretocmd\lstinline{\Colorbox{example_block_body_color}\bgroup\kern-\fboxsep\vphantom{\ttfamily\char`\\y}\appto\lst@DeInit{\egroup}}{}{}
 \makeatother
 
+%%% citation
+\addbibresource{ref.bib}
+\renewcommand\bibfont{\small}
