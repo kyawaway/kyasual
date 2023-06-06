@@ -1,5 +1,5 @@
 # kyasual
-[WIP]
+
 My Beamer Theme. 
 
 ![sampleslide1](/fig/sampleslide/sampleslide-01.png)
