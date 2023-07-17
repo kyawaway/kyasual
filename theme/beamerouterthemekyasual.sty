@@ -16,7 +16,7 @@
 
     \fill [
             color = normal_text_color,
-          ] (0, 0.3\paperheight) rectangle(\paperwidth, 1.2\paperheight);
+          ] (0, 0.4\paperheight) rectangle(\paperwidth, 1.2\paperheight);
 
 
       \node[above right] at (1.15cm, 0.5em + 0.45\paperheight){%
@@ -51,15 +51,15 @@
     \begin{tikzpicture}
       \useasboundingbox (0, -1pt) rectangle(\paperwidth,\paperheight);
 
-      \fill [color = normal_text_color] (0, 0pt) rectangle(\paperwidth, 1.2cm);
+      \fill [color = normal_text_color] (0, 0pt) rectangle(\paperwidth, 1.3cm);
       
-      \node[right] at (0.3, 0.55cm){
+      \node[right] at (0.3, 0.6cm){
         \color{frametitle.fg}
         \insertframetitle
       };
 
       
-      \node[above left, font=\large] at (\paperwidth+0.1cm, 0.3cm){
+      \node[above left, font=\large] at (\paperwidth+0.1cm, 0.2cm){
         \usebeamercolor[fg]{page number in head/foot}%
         \usebeamerfont{page number in head/foot}%
         \insertpagenumber%
