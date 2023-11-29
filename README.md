@@ -11,6 +11,8 @@ Documentation is in [/sampleslide.pdf](/sampleslide.pdf).
 
 If you want English version, please visit [EN](https://github.com/tkyawa/kyasual/tree/EN). 
 
+If you want more mature version, please visit [kyature](https://github.com/tkyawa/kyasual/tree/mature). 
+
 If you want to make poster, please visit [poster version](https://github.com/kyawaway/poster-kyasual).
 
 ## Getting Started
