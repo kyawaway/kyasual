@@ -108,6 +108,7 @@
         \item{Main: GenshinGothic}
         \item{Italic: \textit{TimesItalic}}
     \end{itemize}
+    ref example:\cite{bib1,bib2}
 \end{frame}
 
 \begin{frame}{日本語サンプル}
@@ -118,6 +119,8 @@
     一行あたりはだいたいこのくらい書けて，余ったら勝手に改行します．\\
     強調は，\textbf{太字}と\alert{アラート}があります．\\
     フォント：源真ゴシック
+    \\
+    参考文献例:\cite{bib1,bib2}
 \end{frame}
 
 \begin{frame}{itemize sample}
@@ -290,7 +293,6 @@ instance Monad (King k) where
             \begin{lstlisting}[language=TeX]
 % using feature command 
 % in itemize environment
-
 \begin{itemize}
     \okitem{ok}
     \negitem{neg}
@@ -328,6 +330,7 @@ instance Monad (King k) where
                         \item{enum2.1}
                     \end{enumerate}
             \end{enumerate}
+        \vspace{2em}
         \end{column}
     \end{columns}
 \end{frame}
@@ -368,6 +371,10 @@ instance Monad (King k) where
             \okitem{but I'm satisfied because it looks \alert{good}:)}
         \end{itemize}
     \end{textblock}
+\end{frame}
+
+\begin{frame}[allowframebreaks]{Reference}
+    \printbibliography
 \end{frame}
 %
 %
