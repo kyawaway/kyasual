@@ -24,7 +24,7 @@ If you want to make poster, please visit [poster version](https://github.com/kya
 
 ### Installation
 ```bash
-git clone git@github.com:tkyawa/kyasual.git
+git clone git@github.com:kyawaway/kyasual.git
 make
 ```
 
