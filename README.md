@@ -19,7 +19,7 @@ Documentation is in [/sampleslide.pdf](/sampleslide.pdf).
 
 ### Installation
 ```bash
-git clone git@github.com:tkyawa/kyasual.git
+git clone git@github.com:kyawaway/kyasual.git
 make
 ```
 
